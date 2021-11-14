@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>local.mc.server</string>
+
+		<key>EnvironmentVariables</key>
+		<dict>
+			<key>PATH</key>
+			<string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin</string>
+		</dict>
+
+		<key>WorkingDirectory</key>
+		<string>/path/to/server</string>
+
+		<key>ProgramArguments</key>
+		<array>
+			<string>/usr/local/bin/python3</string>
+			<string>/path/to/server/manager.py</string>
+			<string>start</string>
+		</array>
+
+		<key>UserName</key>
+		<string>username</string>
+
+		<key>RunAtLoad</key>
+		<true/>
+	</dict>
+</plist>

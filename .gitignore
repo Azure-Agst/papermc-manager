@@ -1,0 +1,6 @@
+# ignore jars
+*.jar
+oldvers/
+
+# ignore logs
+manager.log
